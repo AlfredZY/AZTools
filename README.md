@@ -2,7 +2,8 @@
 常用分类
 
 ##### UIView+Gradient
-- 快速实现view背景渐变色
+
+- [快速实现view背景渐变色](http://www.jianshu.com/p/e7c9e94e165b)
 
 ##### NSString+Number
 - 浮点数格式化输出
