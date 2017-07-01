@@ -23,7 +23,7 @@
 
 
 - (void)gradientTest {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 80, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 200, 30)];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 80, 200, 30)];
     UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 120, 200, 30)];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 160, 200, 30)];
