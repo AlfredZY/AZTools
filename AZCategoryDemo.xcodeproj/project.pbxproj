@@ -13,6 +13,9 @@
 		BB32E83F1F07B3C40031F02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB32E83D1F07B3C40031F02A /* Main.storyboard */; };
 		BB32E8411F07B3C40031F02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB32E8401F07B3C40031F02A /* Assets.xcassets */; };
 		BB32E8441F07B3C40031F02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB32E8421F07B3C40031F02A /* LaunchScreen.storyboard */; };
+		BB32E8521F07B4120031F02A /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E84D1F07B4120031F02A /* NSString+Number.m */; };
+		BB32E8531F07B4120031F02A /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E84F1F07B4120031F02A /* UIImage+Transform.m */; };
+		BB32E8541F07B4120031F02A /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8511F07B4120031F02A /* UIView+Gradient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		BB32E8401F07B3C40031F02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB32E8431F07B3C40031F02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB32E8451F07B3C40031F02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB32E84C1F07B4120031F02A /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
+		BB32E84D1F07B4120031F02A /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		BB32E84E1F07B4120031F02A /* UIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
+		BB32E84F1F07B4120031F02A /* UIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
+		BB32E8501F07B4120031F02A /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
+		BB32E8511F07B4120031F02A /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		BB32E8331F07B3C40031F02A /* AZCategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BB32E84B1F07B4120031F02A /* AZCategory */,
 				BB32E8371F07B3C40031F02A /* AppDelegate.h */,
 				BB32E8381F07B3C40031F02A /* AppDelegate.m */,
 				BB32E83A1F07B3C40031F02A /* ViewController.h */,
@@ -77,6 +87,19 @@
 				BB32E8351F07B3C40031F02A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB32E84B1F07B4120031F02A /* AZCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BB32E84C1F07B4120031F02A /* NSString+Number.h */,
+				BB32E84D1F07B4120031F02A /* NSString+Number.m */,
+				BB32E84E1F07B4120031F02A /* UIImage+Transform.h */,
+				BB32E84F1F07B4120031F02A /* UIImage+Transform.m */,
+				BB32E8501F07B4120031F02A /* UIView+Gradient.h */,
+				BB32E8511F07B4120031F02A /* UIView+Gradient.m */,
+			);
+			path = AZCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB32E8521F07B4120031F02A /* NSString+Number.m in Sources */,
 				BB32E83C1F07B3C40031F02A /* ViewController.m in Sources */,
+				BB32E8531F07B4120031F02A /* UIImage+Transform.m in Sources */,
 				BB32E8391F07B3C40031F02A /* AppDelegate.m in Sources */,
+				BB32E8541F07B4120031F02A /* UIView+Gradient.m in Sources */,
 				BB32E8361F07B3C40031F02A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
