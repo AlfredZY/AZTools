@@ -14,3 +14,6 @@
 - 创建带文字纯色图片
 - 图片裁剪成圆形
 
+#### UIViewController+PushAndPop
+- [循环push同一种ViewController时，控制数量以及返回顺序](http://www.jianshu.com/p/06eca7ee5aeb)
+
