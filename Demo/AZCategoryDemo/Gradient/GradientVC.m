@@ -47,6 +47,11 @@
     
     [imageView setGradientBackgroundWithColors:@[[UIColor redColor],[UIColor orangeColor]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
     
+    label.text = @"Text";
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    [btn setTitle:@"Button" forState:UIControlStateNormal];
+    
 }
 
 @end
