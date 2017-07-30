@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0635E41F2DD4C800EB8C5D /* UIViewController+PushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635E31F2DD4C800EB8C5D /* UIViewController+PushAndPop.m */; };
+		BB0635E91F2DD55B00EB8C5D /* PushAndPopVCOne.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635E71F2DD55B00EB8C5D /* PushAndPopVCOne.m */; };
+		BB0635EA1F2DD55B00EB8C5D /* PushAndPopVCOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0635E81F2DD55B00EB8C5D /* PushAndPopVCOne.xib */; };
+		BB0635F31F2DD72800EB8C5D /* PushAndPopVCTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635F11F2DD72800EB8C5D /* PushAndPopVCTwo.m */; };
+		BB0635F41F2DD72800EB8C5D /* PushAndPopVCTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0635F21F2DD72800EB8C5D /* PushAndPopVCTwo.xib */; };
+		BB0635F81F2DD9BC00EB8C5D /* GradientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635F71F2DD9BC00EB8C5D /* GradientVC.m */; };
+		BB145DF61F0A43CB005A04A6 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BB145DF51F0A43CB005A04A6 /* NSDate+InternetDateTime.m */; };
 		BB32E8361F07B3C40031F02A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8351F07B3C40031F02A /* main.m */; };
 		BB32E8391F07B3C40031F02A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8381F07B3C40031F02A /* AppDelegate.m */; };
 		BB32E83C1F07B3C40031F02A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E83B1F07B3C40031F02A /* ViewController.m */; };
@@ -19,6 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0635E21F2DD4C800EB8C5D /* UIViewController+PushAndPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PushAndPop.h"; sourceTree = "<group>"; };
+		BB0635E31F2DD4C800EB8C5D /* UIViewController+PushAndPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PushAndPop.m"; sourceTree = "<group>"; };
+		BB0635E61F2DD55B00EB8C5D /* PushAndPopVCOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAndPopVCOne.h; sourceTree = "<group>"; };
+		BB0635E71F2DD55B00EB8C5D /* PushAndPopVCOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAndPopVCOne.m; sourceTree = "<group>"; };
+		BB0635E81F2DD55B00EB8C5D /* PushAndPopVCOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAndPopVCOne.xib; sourceTree = "<group>"; };
+		BB0635F01F2DD72800EB8C5D /* PushAndPopVCTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAndPopVCTwo.h; sourceTree = "<group>"; };
+		BB0635F11F2DD72800EB8C5D /* PushAndPopVCTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAndPopVCTwo.m; sourceTree = "<group>"; };
+		BB0635F21F2DD72800EB8C5D /* PushAndPopVCTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAndPopVCTwo.xib; sourceTree = "<group>"; };
+		BB0635F61F2DD9BC00EB8C5D /* GradientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientVC.h; sourceTree = "<group>"; };
+		BB0635F71F2DD9BC00EB8C5D /* GradientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientVC.m; sourceTree = "<group>"; };
+		BB145DF41F0A43CB005A04A6 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		BB145DF51F0A43CB005A04A6 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
 		BB32E8311F07B3C40031F02A /* AZCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB32E8351F07B3C40031F02A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB32E8371F07B3C40031F02A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +67,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0635E51F2DD53100EB8C5D /* PushAndPop */ = {
+			isa = PBXGroup;
+			children = (
+				BB0635E61F2DD55B00EB8C5D /* PushAndPopVCOne.h */,
+				BB0635E71F2DD55B00EB8C5D /* PushAndPopVCOne.m */,
+				BB0635E81F2DD55B00EB8C5D /* PushAndPopVCOne.xib */,
+				BB0635F01F2DD72800EB8C5D /* PushAndPopVCTwo.h */,
+				BB0635F11F2DD72800EB8C5D /* PushAndPopVCTwo.m */,
+				BB0635F21F2DD72800EB8C5D /* PushAndPopVCTwo.xib */,
+			);
+			path = PushAndPop;
+			sourceTree = "<group>";
+		};
+		BB0635F51F2DD9A400EB8C5D /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				BB0635F61F2DD9BC00EB8C5D /* GradientVC.h */,
+				BB0635F71F2DD9BC00EB8C5D /* GradientVC.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
 		BB32E8281F07B3C40031F02A = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +113,8 @@
 				BB32E8381F07B3C40031F02A /* AppDelegate.m */,
 				BB32E83A1F07B3C40031F02A /* ViewController.h */,
 				BB32E83B1F07B3C40031F02A /* ViewController.m */,
+				BB0635F51F2DD9A400EB8C5D /* Gradient */,
+				BB0635E51F2DD53100EB8C5D /* PushAndPop */,
 				BB32E83D1F07B3C40031F02A /* Main.storyboard */,
 				BB32E8401F07B3C40031F02A /* Assets.xcassets */,
 				BB32E8421F07B3C40031F02A /* LaunchScreen.storyboard */,
@@ -98,6 +141,10 @@
 				BB32E84F1F07B4120031F02A /* UIImage+Transform.m */,
 				BB32E8501F07B4120031F02A /* UIView+Gradient.h */,
 				BB32E8511F07B4120031F02A /* UIView+Gradient.m */,
+				BB145DF41F0A43CB005A04A6 /* NSDate+InternetDateTime.h */,
+				BB145DF51F0A43CB005A04A6 /* NSDate+InternetDateTime.m */,
+				BB0635E21F2DD4C800EB8C5D /* UIViewController+PushAndPop.h */,
+				BB0635E31F2DD4C800EB8C5D /* UIViewController+PushAndPop.m */,
 			);
 			path = AZCategory;
 			sourceTree = "<group>";
@@ -133,6 +180,7 @@
 				TargetAttributes = {
 					BB32E8301F07B3C40031F02A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2273TCK6P6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -161,7 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB32E8441F07B3C40031F02A /* LaunchScreen.storyboard in Resources */,
+				BB0635EA1F2DD55B00EB8C5D /* PushAndPopVCOne.xib in Resources */,
 				BB32E8411F07B3C40031F02A /* Assets.xcassets in Resources */,
+				BB0635F41F2DD72800EB8C5D /* PushAndPopVCTwo.xib in Resources */,
 				BB32E83F1F07B3C40031F02A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,10 +224,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB32E8521F07B4120031F02A /* NSString+Number.m in Sources */,
+				BB0635F31F2DD72800EB8C5D /* PushAndPopVCTwo.m in Sources */,
 				BB32E83C1F07B3C40031F02A /* ViewController.m in Sources */,
+				BB0635E41F2DD4C800EB8C5D /* UIViewController+PushAndPop.m in Sources */,
+				BB0635F81F2DD9BC00EB8C5D /* GradientVC.m in Sources */,
 				BB32E8531F07B4120031F02A /* UIImage+Transform.m in Sources */,
+				BB145DF61F0A43CB005A04A6 /* NSDate+InternetDateTime.m in Sources */,
 				BB32E8391F07B3C40031F02A /* AppDelegate.m in Sources */,
 				BB32E8541F07B4120031F02A /* UIView+Gradient.m in Sources */,
+				BB0635E91F2DD55B00EB8C5D /* PushAndPopVCOne.m in Sources */,
 				BB32E8361F07B3C40031F02A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2273TCK6P6;
 				INFOPLIST_FILE = AZCategoryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfred.AZCategoryDemo;
@@ -309,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2273TCK6P6;
 				INFOPLIST_FILE = AZCategoryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfred.AZCategoryDemo;
@@ -335,6 +392,7 @@
 				BB32E84A1F07B3C40031F02A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

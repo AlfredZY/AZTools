@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "UIView+Gradient.h"
 
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@interface ViewController ()
+@property (strong, nonatomic) UITableView *tableView;
+@property (copy, nonatomic) NSArray *titles;
+@property (copy, nonatomic) NSArray *classStrings;
 
 @end
 
@@ -18,36 +20,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self gradientTest];
+    [self.view addSubview:self.tableView];
+    self.tableView.frame = self.view.bounds;
+    
+    self.titles = @[@"Gradient",@"PushAndPop"];
+    self.classStrings = @[@"GradientVC",@"PushAndPopVCOne"];
 }
 
+#pragma mark- TableView
 
-- (void)gradientTest {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 200, 30)];
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 80, 200, 30)];
-    UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 120, 200, 30)];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 160, 200, 30)];
-
-    [self.view addSubview:label];
-    [self.view addSubview:btn];
-    [self.view addSubview:tempView];
-    [self.view addSubview:imageView];
-    
-    label.backgroundColor = [UIColor clearColor];
-    btn.backgroundColor = [UIColor blueColor];
-    tempView.backgroundColor = [UIColor blueColor];
-    imageView.backgroundColor = [UIColor blueColor];
-
-    [label setGradientBackgroundWithColors:@[[UIColor redColor],[UIColor orangeColor]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
-    
-    [btn setGradientBackgroundWithColors:@[[UIColor redColor],[UIColor orangeColor]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
-    
-    [tempView setGradientBackgroundWithColors:@[[UIColor redColor],[UIColor orangeColor]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
-    
-    [imageView setGradientBackgroundWithColors:@[[UIColor redColor],[UIColor orangeColor]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.titles.count;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *kID = @"kID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kID];
+    }
+    cell.textLabel.text = self.titles[indexPath.row];
+    return cell;
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc = [[NSClassFromString(self.classStrings[indexPath.row]) alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark- Getter
+
+- (UITableView *)tableView {
+    if (_tableView == nil) {
+        UITableView *view = [[UITableView alloc] init];
+        view.delegate = self;
+        view.dataSource = self;
+        _tableView = view;
+    }
+    return _tableView;
+}
 
 @end
