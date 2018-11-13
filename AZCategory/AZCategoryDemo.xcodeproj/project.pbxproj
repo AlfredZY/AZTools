@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB0635E41F2DD4C800EB8C5D /* UIViewController+PushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635E31F2DD4C800EB8C5D /* UIViewController+PushAndPop.m */; };
+		BB0635E41F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635E31F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.m */; };
 		BB0635E91F2DD55B00EB8C5D /* PushAndPopVCOne.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635E71F2DD55B00EB8C5D /* PushAndPopVCOne.m */; };
 		BB0635EA1F2DD55B00EB8C5D /* PushAndPopVCOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0635E81F2DD55B00EB8C5D /* PushAndPopVCOne.xib */; };
 		BB0635F31F2DD72800EB8C5D /* PushAndPopVCTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0635F11F2DD72800EB8C5D /* PushAndPopVCTwo.m */; };
@@ -27,8 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB0635E21F2DD4C800EB8C5D /* UIViewController+PushAndPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PushAndPop.h"; sourceTree = "<group>"; };
-		BB0635E31F2DD4C800EB8C5D /* UIViewController+PushAndPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PushAndPop.m"; sourceTree = "<group>"; };
+		BB0635E21F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AZPushAndPop.h"; sourceTree = "<group>"; };
+		BB0635E31F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AZPushAndPop.m"; sourceTree = "<group>"; };
 		BB0635E61F2DD55B00EB8C5D /* PushAndPopVCOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAndPopVCOne.h; sourceTree = "<group>"; };
 		BB0635E71F2DD55B00EB8C5D /* PushAndPopVCOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAndPopVCOne.m; sourceTree = "<group>"; };
 		BB0635E81F2DD55B00EB8C5D /* PushAndPopVCOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushAndPopVCOne.xib; sourceTree = "<group>"; };
@@ -112,12 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				BB32E84B1F07B4120031F02A /* AZCategory */,
+				BBD241B7219A90AA00911365 /* OtherCategory */,
+				BBD241B8219AA79A00911365 /* Test */,
 				BB32E8371F07B3C40031F02A /* AppDelegate.h */,
 				BB32E8381F07B3C40031F02A /* AppDelegate.m */,
 				BB32E83A1F07B3C40031F02A /* ViewController.h */,
 				BB32E83B1F07B3C40031F02A /* ViewController.m */,
-				BB0635F51F2DD9A400EB8C5D /* Gradient */,
-				BB0635E51F2DD53100EB8C5D /* PushAndPop */,
 				BB32E83D1F07B3C40031F02A /* Main.storyboard */,
 				BB32E8401F07B3C40031F02A /* Assets.xcassets */,
 				BB32E8421F07B3C40031F02A /* LaunchScreen.storyboard */,
@@ -140,18 +140,34 @@
 			children = (
 				BBD241B4219A8DB400911365 /* NSObject+AZSafeArea.h */,
 				BBD241B5219A8DB400911365 /* NSObject+AZSafeArea.m */,
+				BB32E8501F07B4120031F02A /* UIView+AZGradient.h */,
+				BB32E8511F07B4120031F02A /* UIView+AZGradient.m */,
+				BB0635E21F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.h */,
+				BB0635E31F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.m */,
+			);
+			path = AZCategory;
+			sourceTree = "<group>";
+		};
+		BBD241B7219A90AA00911365 /* OtherCategory */ = {
+			isa = PBXGroup;
+			children = (
 				BB32E84C1F07B4120031F02A /* NSString+Number.h */,
 				BB32E84D1F07B4120031F02A /* NSString+Number.m */,
 				BB32E84E1F07B4120031F02A /* UIImage+Transform.h */,
 				BB32E84F1F07B4120031F02A /* UIImage+Transform.m */,
-				BB32E8501F07B4120031F02A /* UIView+AZGradient.h */,
-				BB32E8511F07B4120031F02A /* UIView+AZGradient.m */,
 				BB145DF41F0A43CB005A04A6 /* NSDate+InternetDateTime.h */,
 				BB145DF51F0A43CB005A04A6 /* NSDate+InternetDateTime.m */,
-				BB0635E21F2DD4C800EB8C5D /* UIViewController+PushAndPop.h */,
-				BB0635E31F2DD4C800EB8C5D /* UIViewController+PushAndPop.m */,
 			);
-			path = AZCategory;
+			path = OtherCategory;
+			sourceTree = "<group>";
+		};
+		BBD241B8219AA79A00911365 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				BB0635F51F2DD9A400EB8C5D /* Gradient */,
+				BB0635E51F2DD53100EB8C5D /* PushAndPop */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +247,7 @@
 				BB32E8521F07B4120031F02A /* NSString+Number.m in Sources */,
 				BB0635F31F2DD72800EB8C5D /* PushAndPopVCTwo.m in Sources */,
 				BB32E83C1F07B3C40031F02A /* ViewController.m in Sources */,
-				BB0635E41F2DD4C800EB8C5D /* UIViewController+PushAndPop.m in Sources */,
+				BB0635E41F2DD4C800EB8C5D /* UIViewController+AZPushAndPop.m in Sources */,
 				BB0635F81F2DD9BC00EB8C5D /* GradientVC.m in Sources */,
 				BB32E8531F07B4120031F02A /* UIImage+Transform.m in Sources */,
 				BB145DF61F0A43CB005A04A6 /* NSDate+InternetDateTime.m in Sources */,

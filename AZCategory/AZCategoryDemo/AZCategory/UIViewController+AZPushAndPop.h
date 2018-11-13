@@ -1,5 +1,5 @@
 //
-//  UIViewController+PushAndPop.h
+//  UIViewController+AZPushAndPop.h
 //  AZCategoryDemo
 //
 //  Created by Alfred Zhang on 2017/7/30.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (PushAndPop)
+@interface UIViewController (AZPushAndPop)
 
-+ (NSUInteger)cyclePushLimitNumber;
++ (NSUInteger)az_cyclePushLimitNumber;
 
 @end

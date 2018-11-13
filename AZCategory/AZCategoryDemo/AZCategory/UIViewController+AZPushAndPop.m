@@ -1,15 +1,15 @@
 //
-//  UIViewController+PushAndPop.m
+//  UIViewController+AZPushAndPop.m
 //  AZCategoryDemo
 //
 //  Created by Alfred Zhang on 2017/7/30.
 //  Copyright © 2017年 Alfred Zhang. All rights reserved.
 //
 
-#import "UIViewController+PushAndPop.h"
+#import "UIViewController+AZPushAndPop.h"
 #import <objc/runtime.h>
 
-@implementation UIViewController (PushAndPop)
+@implementation UIViewController (AZPushAndPop)
 
 + (void)load {
     static dispatch_once_t onceToken;
@@ -35,7 +35,7 @@ static void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelecto
 }
 
 - (void)az_viewDidLoad {
-    NSUInteger limitNum = [[self class] cyclePushLimitNumber];
+    NSUInteger limitNum = [[self class] az_cyclePushLimitNumber];
     if (limitNum <= 0) {
         [self az_viewDidLoad];
         return;
@@ -59,7 +59,7 @@ static void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelecto
     [self az_viewDidLoad];
 }
 
-+ (NSUInteger)cyclePushLimitNumber {
++ (NSUInteger)az_cyclePushLimitNumber {
     return 0;
 }
 

@@ -1,25 +1,24 @@
 //
-//  PushAndPopVCOne.m
+//  PushAndPopVCTwo.m
 //  AZCategoryDemo
 //
 //  Created by Alfred Zhang on 2017/7/30.
 //  Copyright © 2017年 Alfred Zhang. All rights reserved.
 //
 
-#import "PushAndPopVCOne.h"
+#import "PushAndPopVCTwo.h"
+#import "UIViewController+AZPushAndPop.h"
 
-#import "UIViewController+PushAndPop.h"
-
-@interface PushAndPopVCOne ()
+@interface PushAndPopVCTwo ()
 
 @property (weak, nonatomic) IBOutlet UILabel *indexLabel;
 
 @end
 
-@implementation PushAndPopVCOne
+@implementation PushAndPopVCTwo
 
-+ (NSUInteger)cyclePushLimitNumber {
-    return 3;
++ (NSUInteger)az_cyclePushLimitNumber {
+    return 1;
 }
 
 - (void)dealloc {
@@ -29,8 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.indexLabel.text = [NSString stringWithFormat:@"%ld",(long)_index];
-    self.title = @"VC One";
-
+    self.title = @"VC Two";
 }
 
 - (void)setIndex:(NSInteger)index {
@@ -39,13 +37,13 @@
 }
 
 - (IBAction)pushOneAction:(UIButton *)sender {
-    PushAndPopVCOne *vc = [[PushAndPopVCOne alloc] init];
-    vc.index = self.index + 1;
+    UIViewController *vc = [[NSClassFromString(@"PushAndPopVCOne") alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)pushTwoAction:(UIButton *)sender {
-    UIViewController *vc = [[NSClassFromString(@"PushAndPopVCTwo") alloc] init];
+    PushAndPopVCTwo *vc = [[PushAndPopVCTwo alloc] init];
+    vc.index = self.index + 1;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
