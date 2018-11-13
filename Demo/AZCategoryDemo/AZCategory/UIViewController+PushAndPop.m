@@ -43,11 +43,11 @@ static void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelecto
     
     NSArray *vcs = self.navigationController.viewControllers;
     NSMutableArray *productDetailVCIndexArrM = [NSMutableArray array];
-    for (NSInteger i = vcs.count; i >= 0; i--) {
-        if (![vcs[i - 1] isKindOfClass:[self class]]) {
+    for (NSInteger i = vcs.count - 1; i >= 0; i--) {
+        if (![vcs[i] isKindOfClass:[self class]]) {
             break;
         }
-        [productDetailVCIndexArrM addObject:@(i - 1)];
+        [productDetailVCIndexArrM addObject:@(i)];
     }
     
     if (productDetailVCIndexArrM.count > limitNum) {
