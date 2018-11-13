@@ -1,13 +1,14 @@
 //
 //  ViewController.m
-//  AZCategoryDemo
+//  AZCategory
 //
-//  Created by Alfred Zhang on 2017/7/1.
-//  Copyright © 2017年 Alfred Zhang. All rights reserved.
+//  Created by Alfred on 2018/11/13.
+//  Copyright © 2018年 Alfred. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "NSObject+AZSafeArea.h"
+
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     
     NSLog(@"viewDidLoad %d",AZ_HAS_SAFEAREA);
-
+    
     
     [self.view addSubview:self.tableView];
     self.tableView.frame = self.view.bounds;

@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  AZCategoryDemo
+//  AZCategory
 //
-//  Created by Alfred Zhang on 2017/7/1.
-//  Copyright © 2017年 Alfred Zhang. All rights reserved.
+//  Created by Alfred on 2018/11/13.
+//  Copyright © 2018年 Alfred. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "NSObject+AZSafeArea.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"application:didFinishLaunchingWithOptions: %d",AZ_HAS_SAFEAREA);
+    // Override point for customization after application launch.
     return YES;
 }
 

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AZCategoryDemo.xcodeproj">
+      location = "self:AZCategory.xcodeproj">
    </FileRef>
 </Workspace>
