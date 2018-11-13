@@ -22,7 +22,7 @@
 		BB32E8441F07B3C40031F02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB32E8421F07B3C40031F02A /* LaunchScreen.storyboard */; };
 		BB32E8521F07B4120031F02A /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E84D1F07B4120031F02A /* NSString+Number.m */; };
 		BB32E8531F07B4120031F02A /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E84F1F07B4120031F02A /* UIImage+Transform.m */; };
-		BB32E8541F07B4120031F02A /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8511F07B4120031F02A /* UIView+Gradient.m */; };
+		BB32E8541F07B4120031F02A /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8511F07B4120031F02A /* UIView+AZGradient.m */; };
 		BBD241B6219A8DB500911365 /* NSObject+AZSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD241B5219A8DB400911365 /* NSObject+AZSafeArea.m */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,8 @@
 		BB32E84D1F07B4120031F02A /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
 		BB32E84E1F07B4120031F02A /* UIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
 		BB32E84F1F07B4120031F02A /* UIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
-		BB32E8501F07B4120031F02A /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
-		BB32E8511F07B4120031F02A /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
+		BB32E8501F07B4120031F02A /* UIView+AZGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AZGradient.h"; sourceTree = "<group>"; };
+		BB32E8511F07B4120031F02A /* UIView+AZGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AZGradient.m"; sourceTree = "<group>"; };
 		BBD241B4219A8DB400911365 /* NSObject+AZSafeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AZSafeArea.h"; sourceTree = "<group>"; };
 		BBD241B5219A8DB400911365 /* NSObject+AZSafeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AZSafeArea.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,8 +144,8 @@
 				BB32E84D1F07B4120031F02A /* NSString+Number.m */,
 				BB32E84E1F07B4120031F02A /* UIImage+Transform.h */,
 				BB32E84F1F07B4120031F02A /* UIImage+Transform.m */,
-				BB32E8501F07B4120031F02A /* UIView+Gradient.h */,
-				BB32E8511F07B4120031F02A /* UIView+Gradient.m */,
+				BB32E8501F07B4120031F02A /* UIView+AZGradient.h */,
+				BB32E8511F07B4120031F02A /* UIView+AZGradient.m */,
 				BB145DF41F0A43CB005A04A6 /* NSDate+InternetDateTime.h */,
 				BB145DF51F0A43CB005A04A6 /* NSDate+InternetDateTime.m */,
 				BB0635E21F2DD4C800EB8C5D /* UIViewController+PushAndPop.h */,
@@ -236,7 +236,7 @@
 				BB32E8531F07B4120031F02A /* UIImage+Transform.m in Sources */,
 				BB145DF61F0A43CB005A04A6 /* NSDate+InternetDateTime.m in Sources */,
 				BB32E8391F07B3C40031F02A /* AppDelegate.m in Sources */,
-				BB32E8541F07B4120031F02A /* UIView+Gradient.m in Sources */,
+				BB32E8541F07B4120031F02A /* UIView+AZGradient.m in Sources */,
 				BB0635E91F2DD55B00EB8C5D /* PushAndPopVCOne.m in Sources */,
 				BBD241B6219A8DB500911365 /* NSObject+AZSafeArea.m in Sources */,
 				BB32E8361F07B3C40031F02A /* main.m in Sources */,
