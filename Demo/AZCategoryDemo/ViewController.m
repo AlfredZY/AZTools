@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+AZSafeArea.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -18,8 +19,17 @@
 
 @implementation ViewController
 
++ (void)load {
+    NSLog(@"load %d",AZ_HAS_SAFEAREA);
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"viewDidLoad %d",AZ_HAS_SAFEAREA);
+
+    
     [self.view addSubview:self.tableView];
     self.tableView.frame = self.view.bounds;
     

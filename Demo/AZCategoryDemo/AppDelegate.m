@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSObject+AZSafeArea.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSLog(@"application:didFinishLaunchingWithOptions: %d",AZ_HAS_SAFEAREA);
     return YES;
 }
 
