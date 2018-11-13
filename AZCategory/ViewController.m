@@ -21,8 +21,6 @@
 @implementation ViewController
 
 + (void)load {
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    BOOL hasSafeArea = window.safeAreaInsets.bottom > 0;
     NSLog(@"load %d",AZ_HAS_SAFEAREA);
 }
 
