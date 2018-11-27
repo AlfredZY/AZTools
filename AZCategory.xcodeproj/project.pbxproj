@@ -108,12 +108,9 @@
 		BBD24205219AAE4600911365 /* AZCategory */ = {
 			isa = PBXGroup;
 			children = (
-				BBD24207219AAE4600911365 /* NSObject+AZSafeArea.h */,
-				BBD2420B219AAE4600911365 /* NSObject+AZSafeArea.m */,
-				BBD24208219AAE4600911365 /* UIView+AZGradient.h */,
-				BBD2420A219AAE4600911365 /* UIView+AZGradient.m */,
-				BBD24206219AAE4600911365 /* UIViewController+AZPushAndPop.h */,
-				BBD24209219AAE4600911365 /* UIViewController+AZPushAndPop.m */,
+				BBE9C72521AD653C004EFCE9 /* SafeArea */,
+				BBE9C72421AD652F004EFCE9 /* Gradient */,
+				BBE9C72321AD6524004EFCE9 /* PushAndPop */,
 			);
 			path = AZCategory;
 			sourceTree = "<group>";
@@ -160,6 +157,33 @@
 				BBD24223219AAE5F00911365 /* PushAndPopVCTwo.xib */,
 			);
 			path = PushAndPop;
+			sourceTree = "<group>";
+		};
+		BBE9C72321AD6524004EFCE9 /* PushAndPop */ = {
+			isa = PBXGroup;
+			children = (
+				BBD24206219AAE4600911365 /* UIViewController+AZPushAndPop.h */,
+				BBD24209219AAE4600911365 /* UIViewController+AZPushAndPop.m */,
+			);
+			path = PushAndPop;
+			sourceTree = "<group>";
+		};
+		BBE9C72421AD652F004EFCE9 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				BBD24208219AAE4600911365 /* UIView+AZGradient.h */,
+				BBD2420A219AAE4600911365 /* UIView+AZGradient.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		BBE9C72521AD653C004EFCE9 /* SafeArea */ = {
+			isa = PBXGroup;
+			children = (
+				BBD24207219AAE4600911365 /* NSObject+AZSafeArea.h */,
+				BBD2420B219AAE4600911365 /* NSObject+AZSafeArea.m */,
+			);
+			path = SafeArea;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
