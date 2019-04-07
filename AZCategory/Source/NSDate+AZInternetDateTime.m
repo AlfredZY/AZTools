@@ -1,19 +1,19 @@
 //
-//  NSDate+InternetDateTime.m
+//  NSDate+AZInternetDateTime.m
 //  MWFeedParser
 //
 //  Created by Michael Waterfall on 07/10/2010.
 //  Copyright 2010 Michael Waterfall. All rights reserved.
 //
 
-#import "NSDate+InternetDateTime.h"
+#import "NSDate+AZInternetDateTime.h"
 
 // Always keep the formatter around as they're expensive to instantiate
 static NSDateFormatter *_internetDateTimeFormatter = nil;
 
 // Good info on internet dates here:
 // http://developer.apple.com/iphone/library/qa/qa2010/qa1480.html
-@implementation NSDate (InternetDateTime)
+@implementation NSDate (AZInternetDateTime)
 
 // Instantiate single date formatter
 + (NSDateFormatter *)internetDateTimeFormatter {
@@ -29,18 +29,18 @@ static NSDateFormatter *_internetDateTimeFormatter = nil;
 }
 
 // Get a date from a string - hint can be used to speed up
-+ (NSDate *)dateFromInternetDateTimeString:(NSString *)dateString formatHint:(DateFormatHint)hint {
++ (NSDate *)az_dateFromInternetDateTimeString:(NSString *)dateString formatHint:(AZDateFormatHint)hint {
      // Keep dateString around a while (for thread-safety)
 	NSDate *date = nil;
     if (dateString) {
-        if (hint != DateFormatHintRFC3339) {
+        if (hint != AZDateFormatHintRFC3339) {
             // Try RFC822 first
-            date = [NSDate dateFromRFC822String:dateString];
-            if (!date) date = [NSDate dateFromRFC3339String:dateString];
+            date = [NSDate az_dateFromRFC822String:dateString];
+            if (!date) date = [NSDate az_dateFromRFC3339String:dateString];
         } else {
             // Try RFC3339 first
-            date = [NSDate dateFromRFC3339String:dateString];
-            if (!date) date = [NSDate dateFromRFC822String:dateString];
+            date = [NSDate az_dateFromRFC3339String:dateString];
+            if (!date) date = [NSDate az_dateFromRFC822String:dateString];
         }
     }
      // Finished with date string
@@ -48,7 +48,7 @@ static NSDateFormatter *_internetDateTimeFormatter = nil;
 }
 
 // See http://www.faqs.org/rfcs/rfc822.html
-+ (NSDate *)dateFromRFC822String:(NSString *)dateString {
++ (NSDate *)az_dateFromRFC822String:(NSString *)dateString {
      // Keep dateString around a while (for thread-safety)
     NSDate *date = nil;
     if (dateString) {
@@ -101,7 +101,7 @@ static NSDateFormatter *_internetDateTimeFormatter = nil;
 }
 
 // See http://www.faqs.org/rfcs/rfc3339.html
-+ (NSDate *)dateFromRFC3339String:(NSString *)dateString {
++ (NSDate *)az_dateFromRFC3339String:(NSString *)dateString {
      // Keep dateString around a while (for thread-safety)
     NSDate *date = nil;
     if (dateString) {

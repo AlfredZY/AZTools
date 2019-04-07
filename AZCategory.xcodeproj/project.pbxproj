@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB964B89225A415C001CAE11 /* AZServiceDate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB964B88225A415C001CAE11 /* AZServiceDate.m */; };
 		BBD241E9219AAC7A00911365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD241E8219AAC7A00911365 /* AppDelegate.m */; };
 		BBD241EC219AAC7A00911365 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD241EB219AAC7A00911365 /* ViewController.m */; };
 		BBD241EF219AAC7A00911365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD241ED219AAC7A00911365 /* Main.storyboard */; };
@@ -17,7 +18,7 @@
 		BBD2420D219AAE4600911365 /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD2420A219AAE4600911365 /* UIView+AZGradient.m */; };
 		BBD2420E219AAE4600911365 /* NSObject+AZSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD2420B219AAE4600911365 /* NSObject+AZSafeArea.m */; };
 		BBD24216219AAE5800911365 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD24212219AAE5800911365 /* UIImage+Transform.m */; };
-		BBD24217219AAE5800911365 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD24213219AAE5800911365 /* NSDate+InternetDateTime.m */; };
+		BBD24217219AAE5800911365 /* NSDate+AZInternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD24213219AAE5800911365 /* NSDate+AZInternetDateTime.m */; };
 		BBD24218219AAE5800911365 /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD24215219AAE5800911365 /* NSString+Number.m */; };
 		BBD24224219AAE5F00911365 /* GradientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD2421B219AAE5F00911365 /* GradientVC.m */; };
 		BBD24225219AAE5F00911365 /* PushAndPopVCOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD2421F219AAE5F00911365 /* PushAndPopVCOne.xib */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB964B87225A415C001CAE11 /* AZServiceDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZServiceDate.h; sourceTree = "<group>"; };
+		BB964B88225A415C001CAE11 /* AZServiceDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZServiceDate.m; sourceTree = "<group>"; };
 		BBD241E4219AAC7A00911365 /* AZCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD241E7219AAC7A00911365 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBD241E8219AAC7A00911365 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,10 +46,10 @@
 		BBD24209219AAE4600911365 /* UIViewController+AZPushAndPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AZPushAndPop.m"; sourceTree = "<group>"; };
 		BBD2420A219AAE4600911365 /* UIView+AZGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AZGradient.m"; sourceTree = "<group>"; };
 		BBD2420B219AAE4600911365 /* NSObject+AZSafeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AZSafeArea.m"; sourceTree = "<group>"; };
-		BBD24210219AAE5800911365 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		BBD24210219AAE5800911365 /* NSDate+AZInternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AZInternetDateTime.h"; sourceTree = "<group>"; };
 		BBD24211219AAE5800911365 /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		BBD24212219AAE5800911365 /* UIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
-		BBD24213219AAE5800911365 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		BBD24213219AAE5800911365 /* NSDate+AZInternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AZInternetDateTime.m"; sourceTree = "<group>"; };
 		BBD24214219AAE5800911365 /* UIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
 		BBD24215219AAE5800911365 /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
 		BBD2421B219AAE5F00911365 /* GradientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientVC.m; sourceTree = "<group>"; };
@@ -89,7 +92,7 @@
 		BBD241E6219AAC7A00911365 /* AZCategory */ = {
 			isa = PBXGroup;
 			children = (
-				BBD24205219AAE4600911365 /* AZCategory */,
+				BBD24205219AAE4600911365 /* Source */,
 				BBD2420F219AAE5800911365 /* OtherCategory */,
 				BBD24219219AAE5F00911365 /* Test */,
 				BBD241E7219AAC7A00911365 /* AppDelegate.h */,
@@ -105,21 +108,26 @@
 			path = AZCategory;
 			sourceTree = "<group>";
 		};
-		BBD24205219AAE4600911365 /* AZCategory */ = {
+		BBD24205219AAE4600911365 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				BBE9C72521AD653C004EFCE9 /* SafeArea */,
-				BBE9C72421AD652F004EFCE9 /* Gradient */,
-				BBE9C72321AD6524004EFCE9 /* PushAndPop */,
+				BBD24207219AAE4600911365 /* NSObject+AZSafeArea.h */,
+				BBD2420B219AAE4600911365 /* NSObject+AZSafeArea.m */,
+				BBD24208219AAE4600911365 /* UIView+AZGradient.h */,
+				BBD2420A219AAE4600911365 /* UIView+AZGradient.m */,
+				BBD24206219AAE4600911365 /* UIViewController+AZPushAndPop.h */,
+				BBD24209219AAE4600911365 /* UIViewController+AZPushAndPop.m */,
+				BB964B87225A415C001CAE11 /* AZServiceDate.h */,
+				BB964B88225A415C001CAE11 /* AZServiceDate.m */,
+				BBD24210219AAE5800911365 /* NSDate+AZInternetDateTime.h */,
+				BBD24213219AAE5800911365 /* NSDate+AZInternetDateTime.m */,
 			);
-			path = AZCategory;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BBD2420F219AAE5800911365 /* OtherCategory */ = {
 			isa = PBXGroup;
 			children = (
-				BBD24210219AAE5800911365 /* NSDate+InternetDateTime.h */,
-				BBD24213219AAE5800911365 /* NSDate+InternetDateTime.m */,
 				BBD24211219AAE5800911365 /* NSString+Number.h */,
 				BBD24215219AAE5800911365 /* NSString+Number.m */,
 				BBD24214219AAE5800911365 /* UIImage+Transform.h */,
@@ -157,33 +165,6 @@
 				BBD24223219AAE5F00911365 /* PushAndPopVCTwo.xib */,
 			);
 			path = PushAndPop;
-			sourceTree = "<group>";
-		};
-		BBE9C72321AD6524004EFCE9 /* PushAndPop */ = {
-			isa = PBXGroup;
-			children = (
-				BBD24206219AAE4600911365 /* UIViewController+AZPushAndPop.h */,
-				BBD24209219AAE4600911365 /* UIViewController+AZPushAndPop.m */,
-			);
-			path = PushAndPop;
-			sourceTree = "<group>";
-		};
-		BBE9C72421AD652F004EFCE9 /* Gradient */ = {
-			isa = PBXGroup;
-			children = (
-				BBD24208219AAE4600911365 /* UIView+AZGradient.h */,
-				BBD2420A219AAE4600911365 /* UIView+AZGradient.m */,
-			);
-			path = Gradient;
-			sourceTree = "<group>";
-		};
-		BBE9C72521AD653C004EFCE9 /* SafeArea */ = {
-			isa = PBXGroup;
-			children = (
-				BBD24207219AAE4600911365 /* NSObject+AZSafeArea.h */,
-				BBD2420B219AAE4600911365 /* NSObject+AZSafeArea.m */,
-			);
-			path = SafeArea;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +246,9 @@
 				BBD241F7219AAC7C00911365 /* main.m in Sources */,
 				BBD241E9219AAC7A00911365 /* AppDelegate.m in Sources */,
 				BBD24224219AAE5F00911365 /* GradientVC.m in Sources */,
-				BBD24217219AAE5800911365 /* NSDate+InternetDateTime.m in Sources */,
+				BBD24217219AAE5800911365 /* NSDate+AZInternetDateTime.m in Sources */,
 				BBD24216219AAE5800911365 /* UIImage+Transform.m in Sources */,
+				BB964B89225A415C001CAE11 /* AZServiceDate.m in Sources */,
 				BBD2420E219AAE4600911365 /* NSObject+AZSafeArea.m in Sources */,
 				BBD24218219AAE5800911365 /* NSString+Number.m in Sources */,
 				BBD2420C219AAE4600911365 /* UIViewController+AZPushAndPop.m in Sources */,
