@@ -1,8 +1,8 @@
-# AZCategory
+# AZTools
 
 ### 快速集成
 
-`pod 'AZCategory'`
+`pod 'AZTools'`
 
 ### 常用分类
 
@@ -15,4 +15,9 @@
 
 ##### NSObject+AZSafeArea
 - [判断圆角（SafeArea）](https://www.jianshu.com/p/88eee80c05e1) 
+
+### 工具类
+
+#### AZServiceDate
+- 获取服务器时间，设置成功后，即使用户修改手机时间，也能获取到正确的服务器时间。
 
