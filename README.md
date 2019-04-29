@@ -1,4 +1,6 @@
-# AZTools
+# AZTools 
+
+[![Build Status](https://travis-ci.org/AlfredZY/AZTools.svg?branch=master)](https://travis-ci.org/AlfredZY/AZTools)
 
 ### 快速集成
 
@@ -20,4 +22,3 @@
 
 #### AZServiceDate
 - 获取服务器时间，设置成功后，即使用户修改手机时间，也能获取到正确的服务器时间。
-
