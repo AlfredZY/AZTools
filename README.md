@@ -1,6 +1,5 @@
-# AZTools 
+# AZTools  [![Build Status](https://travis-ci.org/AlfredZY/AZTools.svg?branch=master)](https://travis-ci.org/AlfredZY/AZTools)
 
-[![Build Status](https://travis-ci.org/AlfredZY/AZTools.svg?branch=master)](https://travis-ci.org/AlfredZY/AZTools)
 
 ### 快速集成
 
