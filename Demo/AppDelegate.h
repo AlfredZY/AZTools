@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  AZCategory
+//  Demo
 //
-//  Created by Alfred on 2018/11/13.
-//  Copyright © 2018年 Alfred. All rights reserved.
+//  Created by Alfred on 2019/4/29.
+//  Copyright © 2019年 AZ. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
