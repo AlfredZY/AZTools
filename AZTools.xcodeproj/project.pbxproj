@@ -26,10 +26,18 @@
 		BB408D8422771CC80030D66B /* NSDate+AZInternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = BB408D7A22771CC80030D66B /* NSDate+AZInternetDateTime.h */; };
 		BB408D8522771CC80030D66B /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D7B22771CC80030D66B /* UIView+AZGradient.m */; };
 		BB408D8622771CC80030D66B /* UIViewController+AZPushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D7C22771CC80030D66B /* UIViewController+AZPushAndPop.m */; };
+		BB5A83FA2296E08500281362 /* AZTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB408D3122771C640030D66B /* AZTools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BB408D3C22771C650030D66B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB408D2822771C640030D66B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB408D3022771C640030D66B;
+			remoteInfo = AZTools;
+		};
+		BB5A83F72296E07E00281362 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB408D2822771C640030D66B /* Project object */;
 			proxyType = 1;
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5A83FA2296E08500281362 /* AZTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +109,7 @@
 				BB408D3322771C640030D66B /* AZTools */,
 				BB408D3E22771C650030D66B /* AZToolsTests */,
 				BB408D3222771C640030D66B /* Products */,
+				BB5A83F92296E08500281362 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +165,13 @@
 				BB408D6022771C7B0030D66B /* main.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		BB5A83F92296E08500281362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +240,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB5A83F82296E07E00281362 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -334,6 +352,11 @@
 			isa = PBXTargetDependency;
 			target = BB408D3022771C640030D66B /* AZTools */;
 			targetProxy = BB408D3C22771C650030D66B /* PBXContainerItemProxy */;
+		};
+		BB5A83F82296E07E00281362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB408D3022771C640030D66B /* AZTools */;
+			targetProxy = BB5A83F72296E07E00281362 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
