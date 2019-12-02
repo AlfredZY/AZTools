@@ -26,7 +26,7 @@
 		BB408D8422771CC80030D66B /* NSDate+AZInternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = BB408D7A22771CC80030D66B /* NSDate+AZInternetDateTime.h */; };
 		BB408D8522771CC80030D66B /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D7B22771CC80030D66B /* UIView+AZGradient.m */; };
 		BB408D8622771CC80030D66B /* UIViewController+AZPushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D7C22771CC80030D66B /* UIViewController+AZPushAndPop.m */; };
-		BB5A83FA2296E08500281362 /* AZTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB408D3122771C640030D66B /* AZTools.framework */; };
+		BB4704292395094A0009A5A6 /* AZTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB408D3122771C640030D66B /* AZTools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 			remoteGlobalIDString = BB408D3022771C640030D66B;
 			remoteInfo = AZTools;
 		};
-		BB5A83F72296E07E00281362 /* PBXContainerItemProxy */ = {
+		BB470427239509430009A5A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB408D2822771C640030D66B /* Project object */;
 			proxyType = 1;
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5A83FA2296E08500281362 /* AZTools.framework in Frameworks */,
+				BB4704292395094A0009A5A6 /* AZTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +240,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BB5A83F82296E07E00281362 /* PBXTargetDependency */,
+				BB470428239509430009A5A6 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -353,10 +353,10 @@
 			target = BB408D3022771C640030D66B /* AZTools */;
 			targetProxy = BB408D3C22771C650030D66B /* PBXContainerItemProxy */;
 		};
-		BB5A83F82296E07E00281362 /* PBXTargetDependency */ = {
+		BB470428239509430009A5A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB408D3022771C640030D66B /* AZTools */;
-			targetProxy = BB5A83F72296E07E00281362 /* PBXContainerItemProxy */;
+			targetProxy = BB470427239509430009A5A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,6 +515,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlfredZY.AZTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -539,6 +540,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlfredZY.AZTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -583,12 +585,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C8439L29Q;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlfredZY.Demo;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondertek.hecmccmobile.prd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -599,12 +607,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZKMB3R7AA;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlfredZY.Demo;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondertek.hecmccmobile.prd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
