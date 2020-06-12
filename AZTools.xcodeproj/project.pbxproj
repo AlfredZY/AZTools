@@ -27,6 +27,9 @@
 		BB408D8522771CC80030D66B /* UIView+AZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D7B22771CC80030D66B /* UIView+AZGradient.m */; };
 		BB408D8622771CC80030D66B /* UIViewController+AZPushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D7C22771CC80030D66B /* UIViewController+AZPushAndPop.m */; };
 		BB4704292395094A0009A5A6 /* AZTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB408D3122771C640030D66B /* AZTools.framework */; };
+		BB6E0A972493193E0099C748 /* AZBlockHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E0A952493193E0099C748 /* AZBlockHelper.h */; };
+		BB6E0A982493193E0099C748 /* AZBlockHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E0A962493193E0099C748 /* AZBlockHelper.m */; };
+		BB6E0A9B24932BDB0099C748 /* AZBlockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E0A9A24932BDB0099C748 /* AZBlockDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,10 @@
 		BB408D7A22771CC80030D66B /* NSDate+AZInternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AZInternetDateTime.h"; sourceTree = "<group>"; };
 		BB408D7B22771CC80030D66B /* UIView+AZGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AZGradient.m"; sourceTree = "<group>"; };
 		BB408D7C22771CC80030D66B /* UIViewController+AZPushAndPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AZPushAndPop.m"; sourceTree = "<group>"; };
+		BB6E0A952493193E0099C748 /* AZBlockHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZBlockHelper.h; sourceTree = "<group>"; };
+		BB6E0A962493193E0099C748 /* AZBlockHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZBlockHelper.m; sourceTree = "<group>"; };
+		BB6E0A9924932BDB0099C748 /* AZBlockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZBlockDemo.h; sourceTree = "<group>"; };
+		BB6E0A9A24932BDB0099C748 /* AZBlockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZBlockDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +145,8 @@
 				BB408D7B22771CC80030D66B /* UIView+AZGradient.m */,
 				BB408D7322771CC70030D66B /* UIViewController+AZPushAndPop.h */,
 				BB408D7C22771CC80030D66B /* UIViewController+AZPushAndPop.m */,
+				BB6E0A952493193E0099C748 /* AZBlockHelper.h */,
+				BB6E0A962493193E0099C748 /* AZBlockHelper.m */,
 			);
 			path = AZTools;
 			sourceTree = "<group>";
@@ -163,6 +172,8 @@
 				BB408D5C22771C7B0030D66B /* LaunchScreen.storyboard */,
 				BB408D5F22771C7B0030D66B /* Info.plist */,
 				BB408D6022771C7B0030D66B /* main.m */,
+				BB6E0A9924932BDB0099C748 /* AZBlockDemo.h */,
+				BB6E0A9A24932BDB0099C748 /* AZBlockDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -184,6 +195,7 @@
 				BB408D8422771CC80030D66B /* NSDate+AZInternetDateTime.h in Headers */,
 				BB408D8322771CC80030D66B /* UIView+AZGradient.h in Headers */,
 				BB408D8122771CC80030D66B /* AZServiceDate.h in Headers */,
+				BB6E0A972493193E0099C748 /* AZBlockHelper.h in Headers */,
 				BB408D8222771CC80030D66B /* NSObject+AZSafeArea.h in Headers */,
 				BB408D7D22771CC80030D66B /* UIViewController+AZPushAndPop.h in Headers */,
 				BB408D4222771C650030D66B /* AZTools.h in Headers */,
@@ -321,6 +333,7 @@
 			files = (
 				BB408D7E22771CC80030D66B /* AZServiceDate.m in Sources */,
 				BB408D8022771CC80030D66B /* NSObject+AZSafeArea.m in Sources */,
+				BB6E0A982493193E0099C748 /* AZBlockHelper.m in Sources */,
 				BB408D8622771CC80030D66B /* UIViewController+AZPushAndPop.m in Sources */,
 				BB408D7F22771CC80030D66B /* NSDate+AZInternetDateTime.m in Sources */,
 				BB408D8522771CC80030D66B /* UIView+AZGradient.m in Sources */,
@@ -342,6 +355,7 @@
 				BB408D5622771C7A0030D66B /* ViewController.m in Sources */,
 				BB408D6122771C7B0030D66B /* main.m in Sources */,
 				BB408D5322771C7A0030D66B /* AppDelegate.m in Sources */,
+				BB6E0A9B24932BDB0099C748 /* AZBlockDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
