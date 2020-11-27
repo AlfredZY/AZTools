@@ -8,6 +8,32 @@
 
 #import "AZBlockHelper.h"
 
+struct AZBlockLiteral {
+    void *isa; // initialized to &_NSConcreteStackBlock or &_NSConcreteGlobalBlock
+    int flags;
+    int reserved;
+    void (*invoke)(void *, ...);
+    struct block_descriptor {
+        unsigned long int reserved;    // NULL
+        unsigned long int size;         // sizeof(struct Block_literal_1)
+        // optional helper functions
+         void (*copy_helper)(void *dst, void *src);     // IFF (1<<25)
+         void (*dispose_helper)(void *src);             // IFF (1<<25)
+         // required ABI.2010.3.16
+         const char *signature;                         // IFF (1<<30)
+     } *descriptor;
+     // imported variables
+ };
+
+ // flags enum
+ enum {
+     AZBlockDescriptionFlagsHasCopyDispose = (1 << 25),
+     AZBlockDescriptionFlagsHasCtor = (1 << 26), // helpers have C++ code
+     AZBlockDescriptionFlagsIsGlobal = (1 << 28),
+     AZBlockDescriptionFlagsHasStret = (1 << 29), // IFF BLOCK_HAS_SIGNATURE
+     AZBlockDescriptionFlagsHasSignature = (1 << 30)
+ };
+
 NSMethodSignature *az_blockSignature(id aBlock) {
     return [AZBlockHelper blockSignature:aBlock];
 }
@@ -18,44 +44,26 @@ NSUInteger az_numberOfBlockArguments(id aBlock) {
 
 @implementation AZBlockHelper
 
-+ (NSMethodSignature *)blockSignature:(id)aBlock {
-    if (!aBlock) {
-        return nil;
-    }
+ typedef int AZBlockDescriptionFlags;
 
-    if (!([aBlock isKindOfClass:NSClassFromString(@"__NSGlobalBlock__")] ||
-          [aBlock isKindOfClass:NSClassFromString(@"__NSMallocBlock__")] ||
-          [aBlock isKindOfClass:NSClassFromString(@"__NSStackBlock__")])) {
-        NSAssert(NO, @"%@ Not A Block!",aBlock);
-        return nil;
-    }
-    
-    uint64_t blockInMemory[4];      //block 在内存中的前4个uint64_t
-    uint64_t descriptor[5];         //block的descriptor 在内存中的前5个uint64_t
-    char *signatureCStr;
-    NSMethodSignature *blockSignature;
-    
-    void *aBlockPtr = (__bridge void *)(aBlock);
-    memcpy(blockInMemory, (void *)aBlockPtr, sizeof(blockInMemory));
-    memcpy(descriptor, (void *)blockInMemory[3], sizeof(descriptor));
-    
-    BOOL hasSignature = ((blockInMemory[1] & 0x00000000FFFFFFFF)  & (1 << 30)) != 0;
-    if (!hasSignature) {
-        NSAssert(NO, @"%@ Do Not Have Signature!",aBlock);
-        return nil;
-    }
-    
-    BOOL hasCopyDisposeHelper = ((blockInMemory[1] & 0x00000000FFFFFFFF)  & (1 << 25)) != 0;
-    
-    if (hasCopyDisposeHelper) {
-        signatureCStr = (char *)descriptor[4];
-    }else{
-        signatureCStr = (char *)descriptor[2];
-    }
-    blockSignature = [NSMethodSignature signatureWithObjCTypes:signatureCStr];
-    
-    return blockSignature;
-}
++ (NSMethodSignature *)blockSignature:(id)block{
+    struct AZBlockLiteral *blockRef = (__bridge struct AZBlockLiteral *)block;
+    AZBlockDescriptionFlags _flags = blockRef->flags;
+    if (_flags & AZBlockDescriptionFlagsHasSignature) {
+        void *signatureLocation = blockRef->descriptor;
+        signatureLocation += sizeof(unsigned long int);
+        signatureLocation += sizeof(unsigned long int);
+
+        if (_flags & AZBlockDescriptionFlagsHasCopyDispose) {
+             signatureLocation += sizeof(void(*)(void *dst, void *src));
+             signatureLocation += sizeof(void (*)(void *src));
+         }
+
+         const char *signature = (*(const char **)signatureLocation);
+         return [NSMethodSignature signatureWithObjCTypes:signature];
+     }
+     return nil;
+ }
 
 + (NSUInteger)numberOfBlockArguments:(id)aBlock {
     return [AZBlockHelper blockSignature:aBlock].numberOfArguments;
