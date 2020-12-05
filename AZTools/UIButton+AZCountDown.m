@@ -29,10 +29,10 @@
 
 - (void)az_cd_start {
     NSParameterAssert(self.az_cd_identify);
-    NSNumber *targetTimeNum = [self sxj_cd_read_targetTime];
+    NSNumber *targetTimeNum = [self az_cd_read_targetTime];
     // nil表示没有倒计时 重新计算新的倒计时
     if (targetTimeNum == nil) {
-        self.az_cd_targetTime = [self sxj_cd_restTargetTime];
+        self.az_cd_targetTime = [self az_cd_restTargetTime];
     }else { // 有未完成的倒计时
         self.az_cd_targetTime = [targetTimeNum doubleValue];
     }
@@ -45,7 +45,7 @@
 }
 
 - (void)az_cd_recover {
-    NSNumber *targetTimeNum = [self sxj_cd_read_targetTime];
+    NSNumber *targetTimeNum = [self az_cd_read_targetTime];
     // 有未完成的倒计时
     if (targetTimeNum) {
         [self az_cd_start];
@@ -84,7 +84,7 @@
     return [NSString stringWithFormat:@"sxj_cd_%@",self.az_cd_identify];
 }
 
-- (NSNumber *)sxj_cd_read_targetTime {
+- (NSNumber *)az_cd_read_targetTime {
     return [[NSUserDefaults standardUserDefaults] objectForKey:[self sxj_cd_key]];
 }
 
@@ -93,7 +93,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSTimeInterval)sxj_cd_restTargetTime {
+- (NSTimeInterval)az_cd_restTargetTime {
     NSTimeInterval targetTime = [[AZServiceDate serviceDate] timeIntervalSince1970] + self.az_cd_count;
     [[NSUserDefaults standardUserDefaults] setObject:@(targetTime) forKey:[self sxj_cd_key]];
     [[NSUserDefaults standardUserDefaults] synchronize];
