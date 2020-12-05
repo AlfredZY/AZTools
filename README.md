@@ -18,8 +18,7 @@
 - [判断圆角（SafeArea）](https://www.jianshu.com/p/88eee80c05e1) 
 
 ##### UIButton+AZCountDown
-
-简单的属性设置就能拥有一个不怕【退出页面/杀掉APP/修改系统时间】的倒计时按钮 
+- [几个属性设置搞定倒计时按钮](https://www.jianshu.com/p/42e4fd260240)
 
 ``` objc
 - (void)viewWillAppear:(BOOL)animated {
