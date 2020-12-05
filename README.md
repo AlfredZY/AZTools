@@ -17,6 +17,39 @@
 ##### NSObject+AZSafeArea
 - [判断圆角（SafeArea）](https://www.jianshu.com/p/88eee80c05e1) 
 
+##### UIButton+AZCountDown
+
+简单的属性设置就能拥有一个不怕【退出页面/杀掉APP/修改系统时间】的倒计时按钮 
+
+``` objc
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // 恢复倒计时
+    [self.button az_cd_recover];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // ...   
+  
+    self.button.az_cd_identify = @"AZCountDownDemoBtn";
+    self.button.az_cd_count = 60;
+    self.button.az_cd_countdownBlock = ^(NSInteger countDown, UIButton * _Nonnull button) {
+        [button setTitle:[NSString stringWithFormat:@"%lds",(long)countDown] forState:UIControlStateDisabled];
+    };
+    self.button.az_cd_endBlock = ^{
+        NSLog(@"倒计时结束！");
+    };
+}
+
+- (IBAction)startCountDown:(UIButton *)sender {
+    // 用户点击开始倒计时
+    [sender az_cd_start];
+}
+```
+
+
+
 ### 工具类
 
 #### AZServiceDate
@@ -25,3 +58,4 @@
 #### AZBlockHelper
 
 - 获取Block的签名、参数个数
+

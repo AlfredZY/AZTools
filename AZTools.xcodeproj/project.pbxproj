@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB31A99C257B6C84001C836C /* AZWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = BB31A99A257B6C84001C836C /* AZWeakProxy.h */; };
+		BB31A99D257B6C84001C836C /* AZWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB31A99B257B6C84001C836C /* AZWeakProxy.m */; };
+		BB31A9AD257B6E0E001C836C /* UIButton+AZCountDown.h in Headers */ = {isa = PBXBuildFile; fileRef = BB31A9AB257B6E0E001C836C /* UIButton+AZCountDown.h */; };
+		BB31A9AE257B6E0E001C836C /* UIButton+AZCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = BB31A9AC257B6E0E001C836C /* UIButton+AZCountDown.m */; };
 		BB408D3B22771C650030D66B /* AZTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB408D3122771C640030D66B /* AZTools.framework */; };
 		BB408D4022771C650030D66B /* AZToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB408D3F22771C650030D66B /* AZToolsTests.m */; };
 		BB408D4222771C650030D66B /* AZTools.h in Headers */ = {isa = PBXBuildFile; fileRef = BB408D3422771C640030D66B /* AZTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB31A99A257B6C84001C836C /* AZWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZWeakProxy.h; sourceTree = "<group>"; };
+		BB31A99B257B6C84001C836C /* AZWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZWeakProxy.m; sourceTree = "<group>"; };
+		BB31A9AB257B6E0E001C836C /* UIButton+AZCountDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+AZCountDown.h"; sourceTree = "<group>"; };
+		BB31A9AC257B6E0E001C836C /* UIButton+AZCountDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AZCountDown.m"; sourceTree = "<group>"; };
 		BB408D3122771C640030D66B /* AZTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AZTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB408D3422771C640030D66B /* AZTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZTools.h; sourceTree = "<group>"; };
 		BB408D3522771C640030D66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,8 +153,12 @@
 				BB408D7B22771CC80030D66B /* UIView+AZGradient.m */,
 				BB408D7322771CC70030D66B /* UIViewController+AZPushAndPop.h */,
 				BB408D7C22771CC80030D66B /* UIViewController+AZPushAndPop.m */,
+				BB31A9AB257B6E0E001C836C /* UIButton+AZCountDown.h */,
+				BB31A9AC257B6E0E001C836C /* UIButton+AZCountDown.m */,
 				BB6E0A952493193E0099C748 /* AZBlockHelper.h */,
 				BB6E0A962493193E0099C748 /* AZBlockHelper.m */,
+				BB31A99A257B6C84001C836C /* AZWeakProxy.h */,
+				BB31A99B257B6C84001C836C /* AZWeakProxy.m */,
 			);
 			path = AZTools;
 			sourceTree = "<group>";
@@ -192,9 +204,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB31A99C257B6C84001C836C /* AZWeakProxy.h in Headers */,
 				BB408D8422771CC80030D66B /* NSDate+AZInternetDateTime.h in Headers */,
 				BB408D8322771CC80030D66B /* UIView+AZGradient.h in Headers */,
 				BB408D8122771CC80030D66B /* AZServiceDate.h in Headers */,
+				BB31A9AD257B6E0E001C836C /* UIButton+AZCountDown.h in Headers */,
 				BB6E0A972493193E0099C748 /* AZBlockHelper.h in Headers */,
 				BB408D8222771CC80030D66B /* NSObject+AZSafeArea.h in Headers */,
 				BB408D7D22771CC80030D66B /* UIViewController+AZPushAndPop.h in Headers */,
@@ -335,6 +349,8 @@
 				BB408D8022771CC80030D66B /* NSObject+AZSafeArea.m in Sources */,
 				BB6E0A982493193E0099C748 /* AZBlockHelper.m in Sources */,
 				BB408D8622771CC80030D66B /* UIViewController+AZPushAndPop.m in Sources */,
+				BB31A9AE257B6E0E001C836C /* UIButton+AZCountDown.m in Sources */,
+				BB31A99D257B6C84001C836C /* AZWeakProxy.m in Sources */,
 				BB408D7F22771CC80030D66B /* NSDate+AZInternetDateTime.m in Sources */,
 				BB408D8522771CC80030D66B /* UIView+AZGradient.m in Sources */,
 			);
