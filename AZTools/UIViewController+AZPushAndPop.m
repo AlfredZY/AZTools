@@ -45,7 +45,7 @@ static void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelecto
     NSMutableArray *productDetailVCIndexArrM = [NSMutableArray array];
     for (NSInteger i = vcs.count - 1; i >= 0; i--) {
         if (![vcs[i] isKindOfClass:[self class]]) {
-            break;
+            continue;
         }
         [productDetailVCIndexArrM addObject:@(i)];
     }
