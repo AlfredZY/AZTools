@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) void((^az_cd_countdownBlock)(NSInteger countDown,UIButton *button));
 
 /// 倒计时结束block回调
-@property (nonatomic, copy) dispatch_block_t az_cd_endBlock;
+@property (nonatomic, copy) void((^az_cd_endBlock)(UIButton *button)); ;
 
 /// 开始/恢复倒计时【会新建倒计时】
 - (void)az_cd_start;

@@ -41,6 +41,7 @@
         NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:proxy selector:@selector(sxj_cd_count_down) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
         [timer fire];
+        self.az_cd_timer = timer;
     }
 }
 
@@ -62,20 +63,21 @@
 
 - (void)sxj_cd_count_down {
     NSInteger delta = self.az_cd_targetTime - [[AZServiceDate serviceDate] timeIntervalSince1970];
+    __weak typeof(self) wself = self;
     if (delta <= 0) {
         self.enabled = YES;
         [self az_cd_stop];
         if (self.az_cd_countdownBlock) {
-            self.az_cd_countdownBlock(0,self);
+            self.az_cd_countdownBlock(0,wself);
         }
         if (self.az_cd_endBlock) {
-            self.az_cd_endBlock();
+            self.az_cd_endBlock(wself);
         }
     }else {
         self.az_cd_isCountdowning = YES;
         self.enabled = NO;
         if (self.az_cd_countdownBlock) {
-            self.az_cd_countdownBlock(delta,self);
+            self.az_cd_countdownBlock(delta,wself);
         }
     }
 }
