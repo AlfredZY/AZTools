@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AZTools"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "常用Category和工具类"
   s.homepage     = "https://github.com/AlfredZY/AZTools"
   s.license      = { :type => "MIT", :file => "LICENSE" }
